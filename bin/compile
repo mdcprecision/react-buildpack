@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "-----> Building React app..."
 cd $1/frontend
-if npm run build; then
+#if npm run build; then
     exit 1
-fi
+#fi
 echo "-----> React app build completed."
