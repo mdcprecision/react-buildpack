@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-echo "-----> Nothing to compile"
+echo "-----> Building React app..."
+cd $1/frontend
+npm run build
+echo "-----> React app build completed."
