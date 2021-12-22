@@ -3,12 +3,14 @@ echo "-----> Building React app..."
 
 cd $1/frontend
 
-echo "-----> Installing packages..."
+echo "-----> Installing packages for npm..."
 npm install
 if test $? -ne 0; then
-    echo "-----> Error installing packages..."
+    echo "-----> Error installing packages for npm..."
     exit 1
 fi
+
+echo "-----> Node version: `node --version`"
 
 echo "-----> Building production files..."
 npm run build
